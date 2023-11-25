@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
-from misitio.rest import views
+from rest import views
 
 router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
