@@ -21,3 +21,7 @@ class GroupViewSet(viewsets.ModelViewSet):
     queryset = Group.objects.all()
     serializer_class = GroupSerializer
     permission_classes = [permissions.IsAuthenticated]
+
+def index(request):
+    placeholder = "placeholder"
+    return render(request, '/miapp/index.html', placeholder)
