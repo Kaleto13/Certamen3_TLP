@@ -28,4 +28,4 @@ def index(request):
         "title": title,
     }
 
-    return render(request,'miapp/index.html', title)
+    return render(request,'miapp/index.html', data)
