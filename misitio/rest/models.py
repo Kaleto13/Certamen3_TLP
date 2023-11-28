@@ -13,5 +13,10 @@ class Evento(models.Model):
     segmentos = [('C','Comunidad USM'),('E','Estudiante'),('P','Profesor'),('J','Jefe de Carrera')]
     segmento = models.CharField(max_length=1,choices=segmentos,default='Comunidad USM')
 
+#class Evento(models.Model):
+ #   fullname = models.CharField(max_length=100)
+  #  nickname = models.CharField(max_length=50)
+   # age = models.PositiveSmallIntegerField()
+   # is_active = models.BooleanField(default=True)
 
 # Create your models here.
