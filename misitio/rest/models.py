@@ -1,6 +1,7 @@
 from django.db import models
 
 
+
 class Evento(models.Model):
 
     id = models.BigAutoField(primary_key=True)
@@ -12,6 +13,9 @@ class Evento(models.Model):
     tipo = models.CharField(max_length=2,choices=tipos,default='Vacaciones')
     segmentos = [('C','Comunidad USM'),('E','Estudiante'),('P','Profesor'),('J','Jefe de Carrera')]
     segmento = models.CharField(max_length=1,choices=segmentos,default='Comunidad USM')
+
+    def __str__(self) -> str:
+        return self.titulo
 
 #class Evento(models.Model):
  #   fullname = models.CharField(max_length=100)
