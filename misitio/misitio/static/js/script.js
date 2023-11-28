@@ -38,7 +38,6 @@ renderCalendar();
 PreviaSiguienteIcon.forEach(icon => {
     icon.addEventListener("click", () => {
         console.log(icon);
-        icon.id === "Previa" ? console.log(Month-1) : console.log(Month + 1);
         Month = icon.id === "Previa" ? Month - 1 : Month + 1;
         if(Month < 0 || Month > 11){
             date = new Date(Year, Month);

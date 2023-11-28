@@ -3,19 +3,31 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+body{ 
     min-height: 100vh;
+    background: #f2f2f2;
+}
+img{
+    height: 30%;
+    width: 30%;
+}
+#header{
     background: #004B85;
 }
-.wrapper{
+#calendario{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    
+}
+#wrapper{
     width: 450px;
     background: #fff;
     border-radius: 10px;
+    margin-bottom: 10px;
 }
-.wrapper header{
+#wrapper header{
     display: flex;
     align-items: center;
     padding: 25px 30px 10px;
@@ -84,4 +96,8 @@ header .icons span:hover{
 }
 .days li.active::before{
     background: #D60019;
+}
+
+#containerbusqueda{
+    justify-content: center;
 }
