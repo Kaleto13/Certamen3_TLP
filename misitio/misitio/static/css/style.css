@@ -129,3 +129,13 @@ header .icons span:hover{
     justify-content: center;
 
 }
+
+#iniciosesion{
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+#imglogo{
+    display: flex;
+}
