@@ -27,7 +27,7 @@ img{
     width: 450px;
     background: #fff;
     border-radius: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 #wrapper header{
     display: flex;
@@ -130,16 +130,13 @@ header .icons span:hover{
     justify-content: center;
 
 }
-footer{
-    margin-top: 10vh;
-    position: absolute;
-    background: #004B85;
+
+#iniciosesion{
+    justify-content: center;
+    display: flex;
+    text-align: center;
 }
 
-#lineafooter{
-    height: 2px;
-    background: #008462;
-}
-h1{
-    color:#f2f2f2;
+#imglogo{
+    display: flex;
 }
