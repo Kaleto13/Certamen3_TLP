@@ -12,11 +12,13 @@ img{
     width: 30%;
 }
 #header{
+    margin-top: 5px;
+    border-radius: 10px;
     background: #004B85;
 }
 #calendario{
     margin-top: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: center;
     
@@ -25,7 +27,7 @@ img{
     width: 450px;
     background: #fff;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 #wrapper header{
     display: flex;
@@ -100,4 +102,9 @@ header .icons span:hover{
 
 #containerbusqueda{
     justify-content: center;
+}
+
+#selector{
+    display: flex;
+    justify-content: center !important;
 }
