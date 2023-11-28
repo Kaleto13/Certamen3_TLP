@@ -121,6 +121,7 @@ header .icons span:hover{
 }
 
 #data{
+    margin-left: 5px;
     display: flex;
 }
 
