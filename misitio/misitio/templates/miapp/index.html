@@ -42,28 +42,22 @@
     <div id = "containerbusqueda" class = "container">
     <div class = "row">
         <div class="dropdown col-6">
-            <div id = "selector">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown button
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </div>
+          <center>
+          <select id="miSelect">
+            {% for segmento in segmentos %}
+              <option value="{{segmento.1}}">{{segmento.1}}</option>
+            {% endfor %}
+          </select>
+        </center>
         </div>
           <div class="dropdown col-6">
-            <div id = "selector">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown button
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </div>
+            <center>
+            <select id="miSelect">
+              {% for tipo in tipos %}
+                <option value="{{tipo.1}}">{{tipo.1}}</option>
+              {% endfor %}
+            </select>
+          </center>
         </div>
     </div>
     <div id = "actividades" class = container>
