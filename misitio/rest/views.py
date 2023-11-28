@@ -32,8 +32,15 @@ class EventoViewSet(viewsets.ModelViewSet):
 
 def index(request):
     title = "Inicio"
+
+    eventos = Evento.objects.all()
+    tipos = Evento.tipos
+    segmentos = Evento.segmentos
     data = {
         "title": title,
+        "eventos":eventos,
+        "tipos": tipos,
+        "segmentos": segmentos
     }
 
     return render(request,'miapp/index.html', data)
