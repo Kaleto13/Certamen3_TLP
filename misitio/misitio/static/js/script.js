@@ -12,15 +12,22 @@ const months =  ["Enero", "Febrero", "Marzo", "Abril",
                  "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
 const renderCalendar = () => {
     let primerDiaMes = new Date(Year, Month, 1).getDay(),
-    ultimoDiaMes = new Date(Year, Month + 1,0).getDate(); //ULTIMO DIA DEL MES
+    ultimoDiasMesAnterior = new Date(Year, Month + 1,0).getDate(),
+    ultimoDiaMes = new Date(Year, Month + 1,0).getDate(), //ULTIMO DIA DEL MES
+    ultimoDiaMesActual = new Date(Year, Month, ultimoDiaMes).getDay();
+    
     let dayPlaceholder = ``;
     
     console.log(ultimoDiaMes);
+
     for(let i = primerDiaMes; i > 0; i--){
-        dayPlaceholder += `<li class = "inactive" >${i}</li>`;
+        dayPlaceholder += `<li class = "inactive" >${ultimoDiasMesAnterior - i + 1}</li>`;
     }
     for(let i = 1; i <= ultimoDiaMes; i++){
         dayPlaceholder += `<li> ${i} </li>`;
+    }
+    for(let i = ultimoDiaMesActual; i < 6; i++){
+        dayPlaceholder += `<li class = "inactive">${ i - ultimoDiaMesActual  + 1}</li>`;
     }
     currentDate.innerText =  `${months[Month]} ${Year}`;
     daysV.innerHTML = dayPlaceholder;
