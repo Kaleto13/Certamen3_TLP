@@ -14,7 +14,10 @@
 </head>
 <body>
     <div id = "header" class = "container">
-        <img src = "{% static '\img\version horizontal.png' %}"/>
+      <div class="row">
+        <img id="imglogo" src = "{% static '\img\version horizontal.png' %}" class="col-6"/>
+        <div id = "iniciosesion" class="col-6"><a href="/admin">Inicio sesión</a></div>
+      </div>
         <div id = "calendario" class = "row">
         <div id = "wrapper" class ="col-12" >
             <header>
