@@ -131,6 +131,14 @@ header .icons span:hover{
 
 }
 
+footer{
+    position: absolute;
+    background-color: #004B85;
+}
+#lineafooter{
+    height: 2px;
+    background-color: #008452;
+}
 #iniciosesion{
     justify-content: center;
     display: flex;
