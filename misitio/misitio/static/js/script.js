@@ -10,6 +10,7 @@ console.log(date, Year, Month);
 
 const months =  ["Enero", "Febrero", "Marzo", "Abril",
                  "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
+                 
 const renderCalendar = () => {
     let primerDiaMes = new Date(Year, Month, 1).getDay(),
     ultimoDiasMesAnterior = new Date(Year, Month + 1,0).getDate(),

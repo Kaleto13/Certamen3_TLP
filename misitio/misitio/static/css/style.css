@@ -121,6 +121,7 @@ header .icons span:hover{
 }
 
 #data{
+    margin-left: 5px;
     display: flex;
 }
 
@@ -128,4 +129,17 @@ header .icons span:hover{
     display: flex;
     justify-content: center;
 
+}
+footer{
+    margin-top: 10vh;
+    position: absolute;
+    background: #004B85;
+}
+
+#lineafooter{
+    height: 2px;
+    background: #008462;
+}
+h1{
+    color:#f2f2f2;
 }
