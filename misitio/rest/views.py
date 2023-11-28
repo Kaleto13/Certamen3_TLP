@@ -2,7 +2,8 @@ from django.shortcuts import render
 from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
 from rest_framework import permissions
-from rest.serializers import UserSerializer, GroupSerializer
+from rest.serializer import UserSerializer, GroupSerializer, EventoSerializer
+from .models import Evento
 
 
 class UserViewSet(viewsets.ModelViewSet):
@@ -21,6 +22,13 @@ class GroupViewSet(viewsets.ModelViewSet):
     queryset = Group.objects.all()
     serializer_class = GroupSerializer
     permission_classes = [permissions.IsAuthenticated]
+
+
+class EventoViewSet(viewsets.ModelViewSet):
+    queryset=Evento.objects.all()
+    serializer_class = EventoSerializer
+
+
 
 def index(request):
     title = "Inicio"
