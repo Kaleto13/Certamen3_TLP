@@ -108,3 +108,13 @@ header .icons span:hover{
     display: flex;
     justify-content: center !important;
 }
+
+#tituloActividades{
+    margin-top: 10px;
+    border-radius: 10px;
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    background: #004B85;
+}
