@@ -40,8 +40,11 @@ INSTALLED_APPS = [
     'rest_framework',
     'coreapi',
     'misitio',
-    'rest'
+    'rest',
+    'cuentas'
 ]
+
+#AUTH_USER_MODEL = 'cuentas.Usuario'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
