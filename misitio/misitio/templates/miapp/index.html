@@ -70,6 +70,15 @@
             <li id = "listaData" class="list-group-item col-2">Tipo</li>
             <li id = "listaData" class="list-group-item col-2">Segmento</li>
         </ul>
+        {% for evento in eventos %}
+        <ul id = "data" class="list-group list-group-horizontal">
+          <li id = "listaData" class="list-group-item col-4">{{evento.titulo}}</li>
+          <li id = "listaData" class="list-group-item col-2">{{evento.fecha_inicio}}</li>
+          <li id = "listaData" class="list-group-item col-2">{{evento.fecha_termino}}</li>
+          <li id = "listaData" class="list-group-item col-2">{{evento.tipo}}</li>
+          <li id = "listaData" class="list-group-item col-2">{{evento.segmento}}</li>
+      </ul>
+        {% endfor %}
         <!--INICIO DE SCRIPT PARA COMPLETAR LISTA DE ACTIVIDADES-->
         <!-- DE SCRIPT PARA COMPLETAR LISTA DE ACTIVIDADES-->
         </div>
