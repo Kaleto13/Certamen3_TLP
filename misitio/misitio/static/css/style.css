@@ -132,6 +132,7 @@ header .icons span:hover{
 }
 
 footer{
+    margin-top: 15vh;
     position: absolute;
     background-color: #004B85;
 }
@@ -147,4 +148,7 @@ footer{
 
 #imglogo{
     display: flex;
+}
+h1{
+    color: #f2f2f2;
 }
