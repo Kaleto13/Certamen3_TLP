@@ -23,5 +23,9 @@ class GroupViewSet(viewsets.ModelViewSet):
     permission_classes = [permissions.IsAuthenticated]
 
 def index(request):
-    placeholder = "placeholder"
-    return render(request, '/miapp/index.html', placeholder)
+    title = "Inicio"
+    data = {
+        "title": title,
+    }
+
+    return render(request,'misitio/rest/templates/miapp/index.html', title)
